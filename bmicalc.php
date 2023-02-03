@@ -1,11 +1,9 @@
 <?php
 /**
  * Plugin Name:     BMI Calc
- * Version:         1.0.3
+ * Version:         1.0.4
  * Description:     Add a BMI and reverse BMI calculator to your pages and posts
  */
-
-
 
 define('BMI_CALC_PLUGIN_DIR', plugin_dir_path(__FILE__));
 define('BMI_CALC_CSS_DIR', 'public/css/');
@@ -27,7 +25,7 @@ function mm_bmicalc_shortcode($attr =[], $content = null) {
     return $buf;
 }
 
-add_shortcode('bmic_calc', 'mm_bmicalc_shortcode');
+add_shortcode('bmi_calc', 'mm_bmicalc_shortcode');
 
 function mm_reverse_bmicalc_shortcode($attr =[], $content = null) {
     $assets_dir = BMI_CALC_PLUGIN_DIR.BMI_CALC_ASSETS_DIR;
