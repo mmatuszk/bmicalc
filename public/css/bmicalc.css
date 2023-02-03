@@ -2,3 +2,11 @@ label {
     display: inline-block;
     width: 5em;
 }
+
+.bmicalc-input {
+    width: 5em;
+}
+
+.bmicalc-unit {
+    padding-left: 1em;
+}
