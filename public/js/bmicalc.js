@@ -17,6 +17,14 @@ jQuery(document).ready(function($) {
         return Number(n.toFixed(d));
     }
 
+    function copyToClipboard(text) {
+        const $temp = $("<input>");
+        $("body").append($temp);
+        $temp.val(text).select();
+        document.execCommand("copy");
+        $temp.remove();
+    }
+      
     /**
      * 
      * @param {height in meters} height 
@@ -85,6 +93,10 @@ jQuery(document).ready(function($) {
 
         var w  = calcReverseBmi(h, bmi);
 
+        var msg = 'For target BMI of '+bmi+', aim for weight of '+roundTo(w, 1)+' kg';
+
+        copyToClipboard(msg);
+
         $('#r_weight_metric').html(w+' kg');
     }
 
@@ -97,6 +109,10 @@ jQuery(document).ready(function($) {
         var bmi = parseFloat($('#r_bmi_english').val());
 
         var w  = calcReverseBmi(h, bmi)*2.2;
+
+        var msg = 'For target BMI of '+bmi+', aim for weight of '+roundTo(w, 1)+' lb';
+
+        copyToClipboard(msg);
 
         $('#r_weight_english').html(roundTo(w, 1)+' lb');
 
