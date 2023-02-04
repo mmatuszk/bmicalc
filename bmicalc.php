@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name:     BMI Calc
- * Version:         1.0.4
+ * Version:         1.0.5
  * Description:     Add a BMI and reverse BMI calculator to your pages and posts
  */
 
@@ -53,6 +53,7 @@ function add_bmicalc_js() {
     wp_enqueue_script('jquery');
     wp_enqueue_script('jquery-ui');
     wp_enqueue_script('jquery-ui-button');
+    wp_enqueue_script('jquery-ui-tabs');
     wp_enqueue_script('bmicalc', plugins_url(BMI_CALC_JS_DIR.BMI_CALC_JS_FILE, __FILE__));
 }
 
