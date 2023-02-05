@@ -1,7 +1,7 @@
 <div id="bmi_calc_tabs">
     <ul>
-        <li><a href="#bmi_calc_tab_metric">Metric</a></li>
         <li><a href="#bmi_calc_tab_english">English</a></li>
+        <li><a href="#bmi_calc_tab_metric">Metric</a></li>
     </ul>
     <div id="bmi_calc_tab_metric">
         <div><label for="height_metric">Height</label><input class="bmicalc-input" id="height_metric"><span class="bmicalc-unit">cm</span></div>

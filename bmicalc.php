@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name:     BMI Calc
- * Version:         1.0.6
+ * Version:         1.0.7
  * Description:     Add a BMI and reverse BMI calculator to your pages and posts
  */
 
